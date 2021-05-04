@@ -1,13 +1,218 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media all and (min-width: 550px) {
+    body {
+        font: 14px 'Roboto';
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #282C34;
+        color: white;
+    }
+
+    ol, ul {
+        padding-left: 30px;
+    }
+
+    .board-row:after {
+        content: "";
+        display: table;
+    }
+
+    .first {
+        margin-bottom: -3px;
+    }
+
+    .status {
+        margin-bottom: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .square {
+        background: #DCDCDC;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .squareVert {
+        background: #DCDCDC;
+        border: none;
+        border-left: 8px solid #C4C4C4;
+        border-right: 8px solid #C4C4C4;
+        font-size: 24px;
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .squareHori {
+        background: #DCDCDC;
+        border: none;
+        border-top: 8px solid #C4C4C4;
+        border-bottom: 8px solid #C4C4C4;
+        font-size: 24px;
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .squareVertHori {
+        background: #DCDCDC;
+        border: none;
+        border: 8px solid #C4C4C4;
+        font-size: 24px;
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        width: 100px;
+    }
+
+      .kbd-navigation .square:focus {
+        background: #ddd;
+    }
+
+    .p1 {
+        font-size: 62px;
+        margin: 0;
+    }
+
+    .p2 {
+        font-weight: 300;
+        font-size: 36px;
+        margin-top: -20px;
+    }
+
+    main {
+        height: 400px;
+        width: 500px;
+        background-color: #DCDCDC;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 30px black;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+@media (max-width: 550px) {
+    body {
+        font: 14px 'Roboto';
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #282C34;
+        color: white;
+    }
+
+    ol, ul {
+        padding-left: 30px;
+    }
+
+    .board-row:after {
+        content: "";
+        display: table;
+    }
+
+    .first {
+        margin-bottom: -3px;
+    }
+
+    .status {
+        margin-bottom: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .square {
+        background: #DCDCDC;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        height: 65px;
+        text-align: center;
+        width: 65px;
+    }
+
+    .squareVert {
+        background: #DCDCDC;
+        border: none;
+        border-left: 8px solid #C4C4C4;
+        border-right: 8px solid #C4C4C4;
+        font-size: 24px;
+        font-weight: bold;
+        height: 65px;
+        text-align: center;
+        width: 65px;
+    }
+
+    .squareHori {
+        background: #DCDCDC;
+        border: none;
+        border-top: 8px solid #C4C4C4;
+        border-bottom: 8px solid #C4C4C4;
+        font-size: 65px;
+        font-weight: bold;
+        height: 65px;
+        text-align: center;
+        width: 65px;
+    }
+
+    .squareVertHori {
+        background: #DCDCDC;
+        border: none;
+        border: 8px solid #C4C4C4;
+        font-size: 24px;
+        font-weight: bold;
+        height: 65px;
+        text-align: center;
+        width: 65px;
+    }
+
+      .kbd-navigation .square:focus {
+        background: #ddd;
+    }
+
+    .p1 {
+        font-size: 62px;
+        margin: 0;
+    }
+
+    .p2 {
+        font-weight: 300;
+        font-size: 36px;
+        margin-top: -20px;
+    }
+
+    main {
+        height: 250px;
+        width: 350px;
+        background-color: #DCDCDC;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 30px black;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
 }
