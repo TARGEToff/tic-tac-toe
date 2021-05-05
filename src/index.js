@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './main.scss';
 
 class Square extends React.Component {
     render() {
@@ -69,12 +69,12 @@ class Board extends React.Component {
                     {this.renderSquareVert(1)}
                     {this.renderSquare(2)}
                 </div>
-                <div className="board-row">
+                <div className="board-row second">
                     {this.renderSquareHori(3)}
                     {this.renderSquareVertHori(4)}
                     {this.renderSquareHori(5)}
                 </div>
-                <div className="board-row">
+                <div className="board-row third">
                     {this.renderSquare(6)}
                     {this.renderSquareVert(7)}
                     {this.renderSquare(8)}
